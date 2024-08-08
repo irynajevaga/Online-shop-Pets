@@ -1,0 +1,131 @@
+
+/* :root {
+  --color-light: #f5f5f5;
+  --color-dark: #333333;
+  --color-light-gray2: #e0e0e0;
+  --color-dark-gray: #666666;
+  --color-blue: #007bff;
+  --blocks-margin-y: 32px;
+  --border-radius-large: 8px;
+  --transition-duration: 0.3s;
+} */
+
+.footerStyle {
+  background-color: #FFFFFF;
+  color: #282828;
+  padding-bottom: 80px;
+  margin-top: 80px;
+}
+
+.gridContainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 3fr 2fr;
+  gap: 32px;
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 9px 16px;
+  padding: 32px;
+  background-color: #F1F3F4;
+  border-radius: 12px;
+}
+
+.gridItem > :first-child {
+  color: #8B8B8B;
+}
+
+.gridItem > :last-child {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.gridItem address {
+  font-style: normal;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: start;
+  gap: 16px;
+}
+
+.icon {
+  width: 43px;
+  height: auto;
+  
+}
+
+/* #instagramLink:hover {
+    background-color: #305891;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(
+      165deg,
+      #515bd4 20%,
+      #8134af 40%,
+      #dd2a7b 60%,
+      #feda77 90%
+    );
+  } */
+
+
+.mapContainer {
+  margin-top: 32px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  clip-path: inset(0 round 16px);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .gridItem {
+    padding: 24px;
+  }
+
+  .gridItem > :last-child {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .icon {
+    width: 36px;
+  }
+
+  iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gridItem {
+    padding: 16px;
+  }
+
+  .gridItem > :last-child {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .icon {
+    width: 32px;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}

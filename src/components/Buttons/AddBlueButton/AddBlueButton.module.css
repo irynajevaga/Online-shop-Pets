@@ -1,0 +1,31 @@
+.addBlueButton {
+  padding: 0 32px;
+  border: none;
+  height: 58px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 6px;
+ cursor: pointer;
+  transition: all 0.2s;
+  background-color:#0D50FF;
+  color: #FFFFFF;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.addBlueButton:hover {
+  background-color: #282828;
+  color: #FFFFFF;
+}
+
+.addBlueButton:active {
+  background-color: #FFFFFF;
+  color: #282828;
+  border: 1px solid #282828;
+}
+
+.addedState {
+  background-color: #FFFFFF;
+  color: #282828;
+  border: 1px solid #282828;
+}

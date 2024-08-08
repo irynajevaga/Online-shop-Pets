@@ -1,0 +1,167 @@
+
+ .Header {
+  border-bottom: 1px solid #DDDDDD;
+}
+.Header:hover{
+  background-color:#c3c3c33d;
+  color:#fff;
+}
+.Header a:hover{
+  
+  color:#505050e8;
+}
+
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 128px;
+}
+
+.logo {
+  flex-shrink: 0;
+  
+}
+
+.navBlock ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  padding: 16px 0;
+}
+
+.navLink a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.cartLink {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.cartBadge {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  background-color:#0D50FF;
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+ @media (max-width: 768px) {
+  .headerContent {
+  
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .navBlock ul {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .navLink a {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+ 
+    .burgerMenu {
+  margin-left: -130px;
+    }
+  
+}
+
+@media (max-width: 490px) {
+  .navLink a {
+    font-size: 6px;
+  }
+}   
+
+ 
+.burgerMenu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  margin-left: -100px;
+  
+}
+
+.burgerLine {
+  width: 24px;
+  height: 3px;
+  background-color: rgb(17, 16, 16);
+  transition: 0.3s;
+}
+
+.burgerMenu.open .burgerLine:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burgerMenu.open .burgerLine:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerMenu.open .burgerLine:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.navBlock ul {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .navBlock ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: absolute; 
+    top: 94px; 
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    /* border: 1px solid #DDDDDD; */
+   
+  }
+
+  .navBlock.open ul {
+    display: flex;
+  }
+
+  .burgerMenu {
+    display: flex;
+  }
+}
+@media (max-width: 400px) {
+  .burgerMenu {
+margin-left: 50px;
+  }
+}
+
+@media (max-width: 300px) {
+  .burgerMenu {
+margin-left: 50px;
+  }
+}

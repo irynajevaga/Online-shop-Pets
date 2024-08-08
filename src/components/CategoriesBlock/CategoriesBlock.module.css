@@ -1,0 +1,99 @@
+/* .categoriesBlock {
+  margin-top: 80px;
+}
+
+.gridCategoriesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 32px;
+  margin-top: 30px;
+  z-index: 10;
+}
+
+.gridCategoriesItem {
+  overflow: hidden;
+}
+
+.categoryItem {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.categoryImage {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.categoryName {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+} */
+
+
+.categoriesBlock {
+  margin-top: 80px;
+}
+
+.gridCategoriesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 32px;
+  margin-top: 30px;
+  z-index: 10;
+}
+
+.gridCategoriesItem {
+  overflow: hidden;
+}
+
+.categoryItem {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.categoryImage {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.categoryName {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* Адаптивные стили */
+
+/* Для экранов меньше 1200px: 3 столбца */
+@media (max-width: 1200px) {
+  .gridCategoriesContainer {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+/* Для экранов меньше 930px: 2 столбца */
+@media (max-width: 930px) {
+  .gridCategoriesContainer {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+/* Для экранов меньше 600px: 1 столбец */
+@media (max-width: 600px) {
+  .gridCategoriesContainer {
+    grid-template-columns: 1fr;
+  }
+}

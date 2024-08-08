@@ -1,0 +1,264 @@
+/* .discountFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 486px;
+  border-radius: 12px;
+  background: linear-gradient(261.47deg, #2451C6 32.63%, #0D50FF 98.96%);
+  margin-top: 106px;
+  padding: 32px 32px 0 32px;
+}
+
+.discountFormContainer h2 {
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 32px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.discountImage {}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-width: 516px;
+  gap: 32px;
+  padding-bottom: 32px;
+}
+
+.formGroupBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formGroup {}
+
+.formGroup input {
+  width: 100%;
+  height: 58px;
+  padding: 0 32px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  border: 1px solid #FFFFFF;
+  background: none;
+  border-radius: 6px;
+  color: #FFFFFF;
+}
+
+.formGroup input::placeholder {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.getDiscountButton {
+  padding: 0 32px;
+  border: none;
+  height: 58px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 6px;
+ cursor: pointer;
+  transition: all 0.2s;
+  background-color: #FFFFFF;
+  color: #282828;
+  white-space: nowrap;
+  z-index: 10;
+  font-weight: 600;
+}
+
+.getDiscountButton:hover {
+  background-color: #282828;
+  color: #FFFFFF;
+}
+
+.getDiscountButton:active {
+  background-color: #FFFFFF;
+  color: #282828;
+}
+
+.addedState {
+  background-color: #F1F3F4;
+  color:#0D50FF;
+} */
+
+
+.discountFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 486px;
+  border-radius: 12px;
+  background: linear-gradient(261.47deg, #2451C6 32.63%, #0D50FF 98.96%);
+  margin-top: 106px;
+  padding: 32px 32px 0 32px;
+}
+
+.discountFormContainer h2 {
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 32px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.discountImage {}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-width: 516px;
+  gap: 32px;
+  padding-bottom: 32px;
+}
+
+.formGroupBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formGroup {}
+
+.formGroup input {
+  width: 100%;
+  height: 58px;
+  padding: 0 32px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  border: 1px solid #FFFFFF;
+  background: none;
+  border-radius: 6px;
+  color: #FFFFFF;
+}
+
+.formGroup input::placeholder {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.getDiscountButton {
+  padding: 0 32px;
+  border: none;
+  height: 58px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 6px;
+ cursor: pointer;
+  transition: all 0.2s;
+  background-color: #FFFFFF;
+  color: #282828;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.getDiscountButton:hover {
+  background-color: #282828;
+  color: #FFFFFF;
+}
+
+.getDiscountButton:active {
+  background-color: #FFFFFF;
+  color: #282828;
+}
+
+.addedState {
+  background-color: #F1F3F4;
+  color:#0D50FF;
+}
+
+/* Адаптивные стили */
+
+/* При ширине экрана 930 пикселей и меньше */
+@media (max-width: 930px) {
+  .discountFormContainer {
+    height: auto;
+    padding: 24px;
+  }
+
+  .formContainer {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .formContent {
+    min-width: auto;
+    gap: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+/* При ширине экрана 750 пикселей и меньше */
+@media (max-width: 750px) {
+  .discountFormContainer {
+    height: auto;
+    padding: 16px;
+  }
+
+  .formContainer {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .formContent {
+    min-width: auto;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+/* При ширине экрана 400 пикселей и меньше */
+@media (max-width: 400px) {
+  .discountFormContainer {
+    height: auto;
+    padding: 12px;
+  }
+
+  .formContainer {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .formContent {
+    min-width: auto;
+    gap: 12px;
+    padding-bottom: 12px;
+  }
+
+  .formGroup input {
+    font-size: 16px;
+    padding: 0 16px;
+  }
+
+  .getDiscountButton {
+    padding: 0 16px;
+    font-size: 16px;
+  }
+}

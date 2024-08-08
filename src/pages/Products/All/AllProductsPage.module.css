@@ -1,0 +1,22 @@
+.selectSort {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filterContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.productsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.sortTitle {
+  font-weight: 600;
+}

@@ -1,0 +1,65 @@
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+ 
+}
+
+.ModalContent {
+  position: relative;
+  background-image: url('https://media.istockphoto.com/id/1494579352/de/foto/britische-kurzhaarkatze-auf-marmor-k%C3%BCchentisch.jpg?s=612x612&w=0&k=20&c=GAaDVhEVOmKl8iRs6nURh_fpHcM535V5w8qWA6iQ3Qs=');
+  background-repeat: no-repeat;
+  background-position: center; 
+  color: #222121;
+  padding: 32px 92px 32px 32px;
+  border-radius: 12px;
+  max-width: 648px;
+  height: 300px;
+  border-radius:8px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.ModalContent h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.ModalContent p{
+  text-align: center;}
+
+.ModalContent p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.CloseButton {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF;
+  transition: all 0.2s;
+  opacity: 0.5;
+}
+
+.CloseButton:hover {
+  color: #FFFFFF;
+  opacity: 1;
+}

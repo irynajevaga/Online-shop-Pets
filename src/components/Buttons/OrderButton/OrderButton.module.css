@@ -1,0 +1,40 @@
+.orderButton {
+  padding: 0 32px;
+  border: none;
+  height: 58px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 6px;
+ cursor: pointer;
+  transition: all 0.2s;
+  background-color:#0D50FF;
+  color: #FFFFFF;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.orderButton:hover {
+  background-color: #282828;
+  color: #FFFFFF;
+}
+
+.orderButton:active {
+  background-color: #FFFFFF;
+  color: #282828;
+  border: 1px solid #282828;
+}
+
+.orderedState {
+  background-color: #FFFFFF;
+  color: #282828;
+  border: 1px solid #282828;
+}
+
+.disabled {
+  background-color:#0D50FF;;
+  color: #FFFFFF;
+  border: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+

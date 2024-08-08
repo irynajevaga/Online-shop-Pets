@@ -1,0 +1,17 @@
+.saleBlock {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.titleBlock {
+  margin-bottom: 20px;
+}
+
+.gridProductContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 32px;
+  list-style: none;
+  margin-top: 30px;
+}
+

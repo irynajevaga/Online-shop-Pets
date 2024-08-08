@@ -1,0 +1,41 @@
+.filtersContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px; /* Ensure it doesn't exceed this width */
+    margin: 0 auto; /* Center it horizontally */
+  }
+  
+  .filtersContainer label {
+    flex: 1 1 200px; /* Adjust to allow items to shrink/grow */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    min-width: 150px; /* Ensure minimum width for smaller inputs */
+  }
+  
+  .filtersContainer input,
+  .filtersContainer select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .filtersContainer {
+      flex-direction: column;
+      align-items: stretch; /* Align items to fill container width */
+    }
+  
+    .filtersContainer label {
+      width: 100%;
+      min-width: unset; /* Reset min-width to allow full use of container */
+    }
+  }
+  

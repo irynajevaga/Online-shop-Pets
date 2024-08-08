@@ -1,0 +1,20 @@
+.filterPrice {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filterPrice span {
+  font-weight: 600;
+}
+
+.filterPrice input {
+  max-width: 112px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #282828;
+  padding: 0 8px 0 16px;
+  border-radius: 6px;
+  border: 1px solid #DDDDDD;
+}

@@ -1,0 +1,106 @@
+.productCard {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  transition: transform all 0.2s;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid #DDDDDD;
+}
+
+.productImageContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.productImage {
+  width: 100%;
+  height: 284px;
+  object-fit: cover;
+  display: block;
+}
+
+.discountFlag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color:#0D50FF;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.addButtonContainer {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  width: 100%;
+  z-index: 10;
+  opacity: 0;
+}
+
+.addButtonContainer button {
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+}
+
+.productCard:hover .addButtonContainer {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.productCard:hover .addButtonContainer {
+  animation: popIn 0.2s forwards;
+}
+
+@keyframes popIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.productInfo {
+  padding: 20px 32px 32px 32px;
+}
+
+.productTitle {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: end;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.currentPrice {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.originalPrice {
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration: line-through;
+  color: #8B8B8B;
+}
+
+.noDiscount .originalPrice {
+  display: none;
+} 
+
+

@@ -1,0 +1,48 @@
+.discountedItems {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.discountedItems span {
+  font-weight: 600;
+}
+
+.customCheckbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  z-index: -1;
+}
+
+.customCheckbox + span {
+ cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+
+.customCheckbox + span::before {
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #DDDDDD;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px 24px;
+}
+
+.customCheckbox:checked + span::before {
+  border-color:#0D50FF;
+  background-color:#0D50FF;
+  background-image: url("../../../assets/icons/check.svg");
+}
+
+.customCheckbox:focus + span::before {
+  border: 2px solid #0D50FF;
+  transition: none;
+}

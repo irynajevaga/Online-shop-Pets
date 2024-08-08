@@ -1,0 +1,42 @@
+.breadcrumbContainer {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.breadcrumbItem {
+  font-size: 16px;
+  font-weight: 500;
+  color: #8B8B8B;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 6px;
+  white-space: nowrap;
+  padding: 6px 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.breadcrumbItem:hover {
+  background-color: #F1F3F4;
+  color: #8B8B8B;
+}
+
+.breadcrumbActive {
+  color:#282828;
+  cursor: pointer;
+}
+
+.breadcrumbActive:hover {
+  background-color: #FFFFFF;
+  color:#282828;
+  
+}
+
+.breadcrumbSeparator {
+  width: 16px;
+  height: 1px;
+  background-color: #DDDDDD;
+}
