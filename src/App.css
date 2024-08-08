@@ -8,6 +8,7 @@
   font-size: 20px;
   line-height: 26px;
   font-weight: 500;
+  
 }
 
 
@@ -92,8 +93,8 @@ a{
 
 
 a:hover {
-  color: #282828;
-  transform: scale(1.1);
+  color: #4344497f;
+  transform: scale(1.01);
 }
 
 
@@ -240,4 +241,13 @@ body {
   svg * {
     transition-property: fill, stroke;
   }
-  
+
+  @media (max-width: 768px) {
+    .titleBlock h2 {
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 70.4px;
+      margin: 0 0 10px 0;
+      white-space: nowrap;
+    }
+  }

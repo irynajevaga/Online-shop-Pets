@@ -75,25 +75,55 @@
   line-height: 26px;
 }
 
-/* Адаптивные стили */
-
-/* Для экранов меньше 1200px: 3 столбца */
-@media (max-width: 1200px) {
+/* Медиа-запрос для экранов до 768px */
+@media (max-width: 768px) {
   .gridCategoriesContainer {
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .categoryImage {
+    height: 300px;
+  }
+
+  .categoryName {
+    font-size: 18px;
   }
 }
 
-/* Для экранов меньше 930px: 2 столбца */
-@media (max-width: 930px) {
+/* Медиа-запрос для экранов до 576px */
+@media (max-width: 576px) {
   .gridCategoriesContainer {
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(1fr, 1fr);
+    gap: 16px;
   }
+
+  .categoryImage {
+    height: 250px;
+  }
+
+  .categoryName {
+    font-size: 16px;
+  }
+  .categoriesBlock h2{}
 }
 
-/* Для экранов меньше 600px: 1 столбец */
-@media (max-width: 600px) {
+/* Медиа-запрос для экранов до 350px */
+@media (max-width: 350px) {
+  .categoriesBlock {
+    margin-top: 40px;
+  }
+
   .gridCategoriesContainer {
-    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .categoryImage {
+    height: 200px;
+  }
+
+  .categoryName {
+    font-size: 14px;
+    margin-top: 12px;
   }
 }

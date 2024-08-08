@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Provider as ReduxProvider } from "react-redux";
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -21,6 +23,8 @@ function App() {
   return (
     <ReduxProvider store={store}>
       <BrowserRouter>
+      <ScrollToTop />
+      <ScrollToTopButton />
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />

@@ -2,13 +2,11 @@
  .Header {
   border-bottom: 1px solid #DDDDDD;
 }
+
+
 .Header:hover{
-  background-color:#c3c3c33d;
-  color:#fff;
-}
-.Header a:hover{
-  
-  color:#505050e8;
+  background-color:#838b9d41;
+ 
 }
 
 
