@@ -251,3 +251,8 @@ body {
       white-space: nowrap;
     }
   }
+  
+  img:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+  }

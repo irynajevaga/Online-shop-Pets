@@ -9,7 +9,7 @@ import Counter from '../../components/Counter/Counter';
 import OrderButton from '../../components/Buttons/OrderButton/OrderButton';
 import styles from './CartPage.module.css';
 
-const API_URL = "http://localhost:3333";
+const API_URL = "https://pet-shop-backend.slavab.kz";
 
 function CartPage() {
   const dispatch = useDispatch();

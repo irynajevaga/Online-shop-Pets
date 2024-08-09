@@ -24,7 +24,7 @@ function DiscountForm() {
     setIsSubmitting(true);
 
     try {
-      const response = await axios.post('http://localhost:3333/sale/send', {
+      const response = await axios.post('https://pet-shop-backend.slavab.kz/sale/send', {
         name,
         phone,
         email,

@@ -9,7 +9,7 @@ import Counter from '../../components/Counter/Counter';
 import styles from './ProductDetailsPage.module.css';
 import { addToCart } from '../../redux/cartSlice';
 
-const API_URL = "http://localhost:3333";  // URL для API запросов
+const API_URL = "https://pet-shop-backend.slavab.kz";  // URL для API запросов
 
 function ProductDetailsPage() {
   const { productId } = useParams();  // Получаем параметр productId из URL
@@ -115,7 +115,7 @@ function ProductDetailsPage() {
                 onClick={() => setIsExpanded(!isExpanded)}
                 style={{ display: product.description ? 'block' : 'none' }}
               >
-                {isExpanded ? 'Show less' : 'Show more'}
+                {isExpanded ? 'Close' : 'More'}
               </button>
             </div>
           </div>

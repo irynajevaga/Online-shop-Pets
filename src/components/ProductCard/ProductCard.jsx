@@ -24,7 +24,7 @@ const ProductCard = ({ product }) => {
   return (
     <li className={styles.productCard}>
       <div className={styles.productImageContainer}>
-        <img src={`http://localhost:3333${product.image}`} alt={product.title} className={styles.productImage} />
+        <img src={`https://pet-shop-backend.slavab.kz/${product.image}`} alt={product.title} className={styles.productImage} />
         {product.discont_price && (
           <div className={styles.discountFlag}>
             -{calculateDiscountPercentage(product.price, product.discont_price)}%

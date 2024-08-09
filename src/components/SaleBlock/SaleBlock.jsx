@@ -11,7 +11,7 @@ const SaleBlock = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:3333/products/all');
+        const response = await axios.get('https://pet-shop-backend.slavab.kz/products/all');
         // Фильтруем товары, чтобы оставить только те, у которых есть discont_price
         const discountedProducts = response.data.filter(product => product.discont_price);
         // Ограничиваем количество товаров до 4

@@ -9,7 +9,7 @@ const CategoriesBlock = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get('http://localhost:3333/categories/all');
+        const response = await axios.get('https://pet-shop-backend.slavab.kz/products/all');
         setCategories(response.data);
       } catch (error) {
         console.error("Error fetching categories:", error);
@@ -35,7 +35,7 @@ const CategoriesBlock = () => {
           {categories.slice(0, 4).map((category) => (
             <li key={category.id} className={styles.gridCategoriesItem}>
               <Link to={`/categories/${category.id}`} className={styles.categoryItem}>
-                <img src={`http://localhost:3333${category.image}`} alt={category.title} className={styles.categoryImage} />
+                <img src={`https://pet-shop-backend.slavab.kz/${category.image}`} alt={category.title} className={styles.categoryImage} />
                 <h3 className={styles.categoryName}>
                   {category.title}
                 </h3>
