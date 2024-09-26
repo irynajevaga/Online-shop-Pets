@@ -1,24 +1,17 @@
-Online Pet shop
+Online Pet Shop
 
-Online Pet Shop — это современный интернет-магазин для товаров для домашних животных, созданный с использованием React. Проект разработан в рамках финального проекта по курсу React и основан на макетах из Figma. Он предоставляет пользователям удобный способ поиска и покупки товаров для их любимых питомцев.
+The Online Pet Shop is a modern e-commerce platform for pet supplies, built using React. This project was developed as the final project for the React course and is based on designs from Figma. It provides users with a convenient way to browse and purchase products for their beloved pets.
 
-## Основные функции
-
-- **Каталог товаров**: Просматривайте широкий ассортимент товаров, фильтруйте по категориям и ищите по ключевым словам.
-- **Корзина покупок**: Добавляйте товары в корзину, изменяйте количество и удаляйте ненужные позиции.
-- **Отзывчивый дизайн**: Приложение оптимизировано для различных устройств, включая мобильные телефоны и планшеты.
-- **Пользовательский интерфейс**: Эстетичный и интуитивно понятный дизайн, разработанный на основе макетов из Figma.
-
-
-Финальный проект REACT по макету из фигмы:
-https://www.figma.com/design/fiozO4sHvyOIccOBi9dzEZ/Front-end-React-project-(Copy)?node-id=1-14&t=X3KHw7sV0Xfep6kl-0
-
-
-## Технологии
-
-- **React**: Основная библиотека для построения пользовательского интерфейса.
-- **React Router**: Для маршрутизации и управления навигацией.
-- **Redux**: Управление состоянием приложения.
-- **Axios**: Выполнение HTTP-запросов к API.
-- **Styled-components**: Стилизованные компоненты для упрощения работы с CSS.
-- **Figma**: Использована для разработки макетов и дизайна интерфейса.
+Key Features
+Product Catalog: Browse a wide range of products, filter by categories, and search by keywords.
+Shopping Cart: Add items to the cart, adjust quantities, and remove unwanted items.
+Responsive Design: The application is optimized for various devices, including mobile phones and tablets.
+User Interface: An aesthetically pleasing and intuitive design developed based on Figma layouts.
+Final REACT Project Based on Figma Layout: Figma Design
+Technologies
+React: The core library for building the user interface.
+React Router: For routing and navigation management.
+Redux: For state management in the application.
+Axios: To make HTTP requests to the API.
+Styled-components: Styled components for easier CSS handling.
+Figma: Used for designing layouts and interface design.
